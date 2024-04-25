@@ -1,0 +1,754 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.1vw;
+    color: #333;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+h5 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.3vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+h6 {
+    color: #1074D8;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+
+.container {
+    max-width: 82vw;
+    margin: 0 auto;
+}
+
+/*SERVICE CARD START*/
+
+.service-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 3.4vw;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4vw;
+    align-items: center;
+    justify-content: center;
+
+    width: 25vw;
+    height: 21.5vw;
+    padding: 0 1.4vw;
+
+    border-radius: 1vw;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.10);
+
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.02);
+}
+
+.service-card article {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4vw;
+    align-items: center;
+    text-align: center;
+}
+
+.service-img * {
+    width: 4.4vw;
+    height: 4.4vw;
+}
+
+.service-card a {
+    text-decoration: none;
+    color: #1074D8;
+
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+
+    transition: color .3s ease-in;
+}
+
+.service-card a:hover {
+    color: #891199;
+}
+
+/*SERVICE CARD END*/
+
+
+
+.section-about-us, .section-why-us {
+    margin-top: 16.6vw;
+}
+
+/*ABOUT US START*/
+
+.about-us-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.3vw;
+}
+
+.about-us-left {
+    width: 100%;
+    height: 100%;
+}
+
+.about-us-img * {
+    position: relative;
+    top: 0;
+    left: -3.1vw;
+
+    width: 38.1vw;
+    height: 28.8vw;
+}
+
+.about-us-right {
+    width: 38.5vw;
+}
+
+.about-us-right article {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3vw;
+    margin: .6vw 0 1.7vw 0;
+}
+
+.about-us-stats-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+}
+
+.about-us-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1vw;
+
+    position: relative;
+}
+
+.p-large {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.text-number {
+    position: absolute;
+    top: .6vw;
+    right: 0;
+
+    color: #1074D8;
+    font-size: .9vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.stats-bar-wrapper {
+    position: relative;
+
+    width: 100%;
+    height: .4vw;
+
+    background: #E3E3E5;
+}
+
+.stats-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: .4vw;
+
+    background: #1074D8;
+}
+
+.about-us-stats-wrapper .about-us-stats:nth-child(1) .stats-bar-wrapper .stats-bar {width: 90%;}
+.about-us-stats-wrapper .about-us-stats:nth-child(2) .stats-bar-wrapper .stats-bar {width: 85%;}
+.about-us-stats-wrapper .about-us-stats:nth-child(3) .stats-bar-wrapper .stats-bar {width: 70%;}
+.about-us-stats-wrapper .about-us-stats:nth-child(4) .stats-bar-wrapper .stats-bar {width: 40%;}
+
+/*ABOUT US END*/
+
+/*WHY US START*/
+
+.why-us-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.3vw;
+}
+
+.why-us-left {
+    width: 38.5vw;
+}
+
+.why-us-left article {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3vw;
+    margin: .6vw 0 2.7vw 0;
+}
+
+.why-us-employees-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1.4vw 2.4vw;
+}
+
+.why-us-card {
+    width: 18.7vw;
+    height: 2.7vw;
+
+    padding: .7vw 1vw .5vw 1vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .7vw;
+
+    text-decoration: none;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.05);
+}
+
+.why-us-arrow {
+    width: 1vw;
+    height: 1vw;
+
+    margin-bottom: .4vw;
+}
+
+.p-why-us {
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.why-us-right {
+    width: 38.5vw;
+    height: 100%;
+}
+
+.why-us-img *  {
+    position: relative;
+    top: 0;
+    left: 3.1vw;
+
+    width: 38.1vw;
+    height: 28.8vw;
+}
+
+/*WHY US END*/
+
+/*ACHIEVEMENTS START*/
+
+.section-achievements {
+    margin-top: 21.1vw;
+}
+
+.achievements-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3vw;
+}
+
+.achievements-top h2 span {
+    color: #1074D8;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.achievements-top p span {
+    color: #F1F1F1;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+}
+
+.achievements-bottom {
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 5.5vw;
+}
+
+.achievements-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.achievements-img * {
+    width: 3.75vw;
+    height: 3.75vw;
+}
+
+.text-big-number {
+    color: #1074D8;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.p-weight-medium {
+    color: #1074D8;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*ACHIEVEMENTS END*/
+
+
+@media only screen and (max-width: 768px) {
+
+    * {
+        font-size: 2vw;
+    }
+
+    h2 {
+        font-size: 3.9vw;
+    }
+
+    h5 {
+        font-size: 3.1vw;
+    }
+
+    h6 {
+        font-size: 2.3vw;
+    }
+
+    .container {
+        max-width: 94vw;
+    }
+
+    /*SERVICE CARD START*/
+
+    .service-wrapper {
+        grid-template-columns: repeat(2, auto);
+        gap: 3.2vw;
+    }
+
+    .service-card {
+        gap: 2.6vw;
+
+        width: 100%;
+        height: 40vw;
+        padding: 0 2.2vw;
+
+        border-radius: 2vw;
+    }
+
+    .service-card:hover {
+        transform: none;
+    }
+
+    .service-card article {
+        gap: 2.6vw;
+    }
+
+    .service-img * {
+        width: 8.3vw;
+        height: 8.3vw;
+    }
+
+    .service-card a {
+        font-size: 2.3vw;
+    }
+    /*SERVICE CARD END*/
+
+    .section-about-us, .section-why-us {
+        margin-top: 31vw;
+    }
+
+    /*ABOUT US START*/
+
+    .about-us-wrapper {
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+        align-items: center;
+        gap: 9vw;
+    }
+
+    .about-us-img * {
+        position: relative;
+        left: unset;
+        width: 100%;
+        height: 58vw;
+    }
+
+    .about-us-left {
+        grid-row: 2;
+    }
+
+    .about-us-right {
+        width: 100%;
+        grid-row: 1;
+    }
+
+    .about-us-right article {
+        gap: 2.6vw;
+        margin: 1.3vw 0 3.2vw 0;
+    }
+
+    .about-us-stats-wrapper {
+        gap: 2.2vw;
+    }
+
+    .about-us-stats {
+        gap: 2.2vw;
+    }
+
+    .p-large {
+        font-size: 2vw;
+    }
+
+    .text-number {
+        top: 1.1vw;
+
+        font-size: 1.8vw;
+    }
+
+    .stats-bar-wrapper {
+        height: .9vw;
+    }
+
+    .stats-bar {
+        height: .9vw;
+    }
+    /*ABOUT US END*/
+
+    /*WHY US START*/
+
+    .why-us-wrapper {
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+        align-items: center;
+        gap: 9vw;
+    }
+
+    .why-us-left {
+        width: 100%;
+    }
+
+    .why-us-left article {
+        gap: 2.6vw;
+        margin: 1.3vw 0 5.2vw 0;
+    }
+
+    .why-us-employees-wrapper {
+        justify-content: start;
+        gap: 2.6vw 4.5vw;
+    }
+
+    .why-us-card {
+        width: 35.1vw;
+        height: 5.2vw;
+
+        padding: 1.1vw 1.7vw .5vw 1.7vw;
+
+        gap: 1.3vw;
+    }
+
+    .why-us-arrow {
+        width: 2vw;
+        height: 2vw;
+
+        margin-bottom: .4vw;
+    }
+
+    .p-why-us {
+        font-size: 1.9vw;
+    }
+
+    .why-us-right {
+        width: 100%;
+        height: 100%;
+    }
+
+    .why-us-img *  {
+        left: unset;
+
+        width: 100%;
+        height: 58vw;
+    }
+
+    /*WHY US END*/
+
+    /*ACHIEVEMENTS START*/
+
+    .section-achievements {
+        margin-top: 39.7vw;
+    }
+
+    .achievements-top {
+        gap: 2.6vw;
+    }
+
+    .achievements-top h2 span {
+        font-size: 4.6vw;
+    }
+
+    .achievements-top p span {
+        font-size: 2.3vw;
+    }
+
+    .achievements-bottom {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 10vw;
+        justify-content: center;
+        align-content: center;
+        justify-items: start;
+
+        margin-top: 10.5vw;
+    }
+
+    .achievements-card {
+        gap: 2vw;
+    }
+
+    .achievements-img * {
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .text-big-number {
+        font-size: 3.1vw;
+    }
+
+    /*ACHIEVEMENTS END*/
+
+}
+
+
+@media only screen and (max-width: 425px) {
+
+    * {
+        font-size: 3.8vw;
+    }
+
+    h2 {
+        font-size: 7.1vw;
+    }
+
+    h5 {
+        font-size: 5.7vw;
+    }
+
+    h6 {
+        font-size: 4.2vw;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 2.3vw;
+        margin: 0;
+    }
+
+    /*SERVICE CARD START*/
+
+    .service-wrapper {
+        grid-template-columns: repeat(1, auto);
+        gap: 3.5vw;
+    }
+
+    .service-card {
+        gap: 2.3vw;
+
+        width: 100%;
+        height: 73vw;
+        padding: 0 3.5vw;
+
+        border-radius: 3.5vw;
+    }
+
+    .service-card article {
+        gap: 2.3vw;
+    }
+
+    .service-img * {
+        width: 15.5vw;
+        height: 15.5vw;
+    }
+
+    .service-card a {
+        font-size: 4.2vw;
+    }
+    /*SERVICE CARD END*/
+
+    .section-about-us, .section-why-us {
+        margin-top: 45vw;
+    }
+
+    /*ABOUT US START*/
+
+    .about-us-wrapper {
+        gap: 12vw;
+    }
+
+    .about-us-img * {
+        height: 62vw;
+    }
+
+    .about-us-right article {
+        gap: 4.7vw;
+        margin: 2.3vw 0 6vw 0;
+    }
+
+    .about-us-stats-wrapper {
+        gap: 4vw;
+    }
+
+    .about-us-stats {
+        gap: 4vw;
+    }
+
+    .p-large {
+        font-size: 3.8vw;
+    }
+
+    .text-number {
+        top: 2.1vw;
+
+        font-size: 3.3vw;
+    }
+
+    .stats-bar-wrapper {
+        height: 1.6vw;
+    }
+
+    .stats-bar {
+        height: 1.6vw;
+    }
+    /*ABOUT US END*/
+
+    /*WHY US START*/
+
+    .why-us-wrapper {
+        gap: 12vw;
+    }
+
+    .why-us-left article {
+        gap: 4.7vw;
+        margin: 2.3vw 0 7vw 0;
+    }
+
+    .why-us-employees-wrapper {
+        grid-template-columns: repeat(1, auto);
+        gap: 4.7vw;
+    }
+
+    .why-us-card {
+        width: 64.2vw;
+        height: 9.5vw;
+
+        padding: 2.1vw 3vw 1.9vw 3vw;
+
+        gap: 2.5vw;
+    }
+
+    .why-us-arrow {
+        width: 3.8vw;
+        height: 3.8vw;
+
+        margin-bottom: .4vw;
+    }
+
+    .p-why-us {
+        font-size: 3.4vw;
+    }
+
+    .why-us-img *  {
+        height: 62vw;
+    }
+
+    /*WHY US END*/
+
+    /*ACHIEVEMENTS START*/
+
+    .section-achievements {
+        margin-top: 50vw;
+    }
+
+    .achievements-top {
+        gap: 4.7vw;
+        text-align: center;
+    }
+
+    .achievements-top h2 span {
+        font-size: 8.5vw;
+    }
+
+    .achievements-top p span {
+        font-size: 4.2vw;
+    }
+
+    .achievements-bottom {
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+        justify-items: start;
+        gap: 15vw;
+
+        margin-top: 20vw;
+    }
+
+    .achievements-card {
+        gap: 3.5vw;
+    }
+
+    .achievements-img * {
+        width: 14.2vw;
+        height: 14.2vw;
+    }
+
+    .text-big-number {
+        font-size: 5.7vw;
+    }
+
+    /*ACHIEVEMENTS END*/
+
+}
