@@ -2,13 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Test Epicstars</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/jquery-input-mask-phone-number@1.0.14/dist/jquery-input-mask-phone-number.js"></script>
+    <script src="/js/jquery-input-mask-phone-number.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/main.js"></script>
 </head>
 <body>
 
@@ -20,15 +27,28 @@
 
     <main>
         <section class="section-hero">
+            <picture class="hero-bg-img">
+                <source srcset="assets/img/hero-bg-img.webp" type="image/webp">
+                <img src="assets/img/hero-bg-img.png" alt="hero-bg-img">
+            </picture>
+
+            <picture class="hero-img" >
+                <source srcset="assets/img/hero-img.webp" type="image/webp" data-aos="fade-up-left">
+                <img src="assets/img/hero-img.png" alt="hero-img.png" data-aos="fade-up-left">
+            </picture>
             <div class="container">
-<!--    TODO-->
+                <div class="hero-wrapper" data-aos="fade-right">
+                    <h1>EPICSTARS — платформа, объединяющая <span>рекламодателей</span> и <span>блогеров</span></h1>
+                    <p class="p-subtitle">Помогаем брендам и компаниям транслировать свои маркетинговые активности через лидеров мнений и блогеров</p>
+                    <button class="button">давайте начнем!</button>
+                </div>
             </div>
         </section>
 
         <section class="section-service">
             <div class="container">
                 <div class="service-wrapper">
-                    <div class="service-card">
+                    <div class="service-card" data-aos="zoom-in">
                         <picture class="service-img">
                             <source srcset="assets/services-icons/imarketing.webp" type="image/webp">
                             <img src="assets/services-icons/imarketing.png" alt="imarketing">
@@ -39,7 +59,7 @@
                         </article>
                         <a href="https://www.google.com/">Узнать больше</a>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card" data-aos="zoom-in">
                         <picture class="service-img">
                             <source srcset="assets/services-icons/developing.webp" type="image/webp">
                             <img src="assets/services-icons/developing.png" alt="developing">
@@ -50,7 +70,7 @@
                         </article>
                         <a href="https://www.google.com/">Узнать больше</a>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card" data-aos="zoom-in">
                         <picture class="service-img">
                             <source srcset="assets/services-icons/optimization.webp" type="image/webp">
                             <img src="assets/services-icons/optimization.png" alt="optimization">
@@ -61,7 +81,7 @@
                         </article>
                         <a href="https://www.google.com/">Узнать больше</a>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card" data-aos="zoom-in">
                         <picture class="service-img">
                             <source srcset="assets/services-icons/seo-developping.webp" type="image/webp">
                             <img src="assets/services-icons/seo-developping.webp" alt="seo-developping">
@@ -72,7 +92,7 @@
                         </article>
                         <a href="https://www.google.com/">Узнать больше</a>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card" data-aos="zoom-in">
                         <picture class="service-img">
                             <source srcset="assets/services-icons/boost.webp" type="image/webp">
                             <img src="assets/services-icons/boost.png" alt="boost">
@@ -83,7 +103,7 @@
                         </article>
                         <a href="https://www.google.com/">Узнать больше</a>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card" data-aos="zoom-in">
                         <picture class="service-img">
                             <source srcset="assets/services-icons/copyrighting.webp" type="image/webp">
                             <img src="assets/services-icons/copyrighting.png" alt="copyrighting">
@@ -99,17 +119,21 @@
         </section>
 
         <section class="section-about-us">
-<!--            TODO BG IMAGE-->
+            <picture class="about-bg-img" >
+                <source srcset="assets/img/about-bg-img.webp" type="image/webp" >
+                <img src="assets/img/about-bg-img.png" alt="about-bg-img">
+            </picture>
+
             <div class="container">
                 <div class="about-us-wrapper">
                     <div class="about-us-left">
                         <picture  class="about-us-img">
-                            <source srcset="assets/img/about-us-img.webp" type="image/webp">
-                            <img src="assets/img/about-us-img.png" alt="about-us-img">
+                            <source srcset="assets/img/about-us-img.webp" type="image/webp" data-aos="fade-right">
+                            <img src="assets/img/about-us-img.png" alt="about-us-img" data-aos="fade-right">
                         </picture>
                     </div>
 
-                    <div class="about-us-right">
+                    <div class="about-us-right" data-aos="zoom-in">
                         <h6>О нашей компании</h6>
                         <article>
                             <h2>Наша задача – Обеспечить бизнес грамотной системой маркетинга</h2>
@@ -154,13 +178,13 @@
             <div class="container">
                 <div class="why-us-wrapper">
                     <div class="why-us-left">
-                        <h6>Почему выбирают нас?</h6>
-                        <article>
+                        <h6 data-aos="zoom-in">Почему выбирают нас?</h6>
+                        <article data-aos="zoom-in">
                             <h2>Продвигайте свой бренд в интернете с современным IT решениями</h2>
                             <p>Опытная веб студия Skyweb несёт полную ответсвенность за предоставляемые услуги и гарантирует следующие преимущества:</p>
                         </article>
                         <div class="why-us-employees-wrapper">
-                            <a href="https://www.google.com/" class="why-us-card">
+                            <a href="https://www.google.com/" class="why-us-card" data-aos="zoom-in">
                                 <picture  class="why-us-arrow">
                                     <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6625 6.58736C12.8903 6.81516 12.8903 7.18451 12.6625 7.41232L9.16246 10.9123C8.93465 11.1401 8.56531 11.1401 8.3375 10.9123C8.10969 10.6845 8.10969 10.3152 8.3375 10.0874L10.8417 7.58317L1.74998 7.58317C1.42781 7.58317 1.16664 7.322 1.16664 6.99984C1.16664 6.67767 1.42781 6.4165 1.74998 6.4165L10.8417 6.4165L8.3375 3.91232C8.10969 3.68451 8.10969 3.31516 8.3375 3.08736C8.56531 2.85955 8.93465 2.85955 9.16246 3.08736L12.6625 6.58736Z" fill="#1074D8"/>
@@ -168,7 +192,7 @@
                                 </picture>
                                 <p class="p-why-us">Приятные сотрудники</p>
                             </a>
-                            <a href="https://www.google.com/" class="why-us-card">
+                            <a href="https://www.google.com/" class="why-us-card" data-aos="zoom-in">
                                 <picture  class="why-us-arrow">
                                     <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6625 6.58736C12.8903 6.81516 12.8903 7.18451 12.6625 7.41232L9.16246 10.9123C8.93465 11.1401 8.56531 11.1401 8.3375 10.9123C8.10969 10.6845 8.10969 10.3152 8.3375 10.0874L10.8417 7.58317L1.74998 7.58317C1.42781 7.58317 1.16664 7.322 1.16664 6.99984C1.16664 6.67767 1.42781 6.4165 1.74998 6.4165L10.8417 6.4165L8.3375 3.91232C8.10969 3.68451 8.10969 3.31516 8.3375 3.08736C8.56531 2.85955 8.93465 2.85955 9.16246 3.08736L12.6625 6.58736Z" fill="#1074D8"/>
@@ -176,7 +200,7 @@
                                 </picture>
                                 <p class="p-why-us">Приятные сотрудники</p>
                             </a>
-                            <a href="https://www.google.com/" class="why-us-card">
+                            <a href="https://www.google.com/" class="why-us-card" data-aos="zoom-in">
                                 <picture  class="why-us-arrow">
                                     <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6625 6.58736C12.8903 6.81516 12.8903 7.18451 12.6625 7.41232L9.16246 10.9123C8.93465 11.1401 8.56531 11.1401 8.3375 10.9123C8.10969 10.6845 8.10969 10.3152 8.3375 10.0874L10.8417 7.58317L1.74998 7.58317C1.42781 7.58317 1.16664 7.322 1.16664 6.99984C1.16664 6.67767 1.42781 6.4165 1.74998 6.4165L10.8417 6.4165L8.3375 3.91232C8.10969 3.68451 8.10969 3.31516 8.3375 3.08736C8.56531 2.85955 8.93465 2.85955 9.16246 3.08736L12.6625 6.58736Z" fill="#1074D8"/>
@@ -184,7 +208,7 @@
                                 </picture>
                                 <p class="p-why-us">Приятные сотрудники</p>
                             </a>
-                            <a href="https://www.google.com/" class="why-us-card">
+                            <a href="https://www.google.com/" class="why-us-card" data-aos="zoom-in">
                                 <picture  class="why-us-arrow">
                                     <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6625 6.58736C12.8903 6.81516 12.8903 7.18451 12.6625 7.41232L9.16246 10.9123C8.93465 11.1401 8.56531 11.1401 8.3375 10.9123C8.10969 10.6845 8.10969 10.3152 8.3375 10.0874L10.8417 7.58317L1.74998 7.58317C1.42781 7.58317 1.16664 7.322 1.16664 6.99984C1.16664 6.67767 1.42781 6.4165 1.74998 6.4165L10.8417 6.4165L8.3375 3.91232C8.10969 3.68451 8.10969 3.31516 8.3375 3.08736C8.56531 2.85955 8.93465 2.85955 9.16246 3.08736L12.6625 6.58736Z" fill="#1074D8"/>
@@ -192,7 +216,7 @@
                                 </picture>
                                 <p class="p-why-us">Приятные сотрудники</p>
                             </a>
-                            <a href="https://www.google.com/" class="why-us-card">
+                            <a href="https://www.google.com/" class="why-us-card" data-aos="zoom-in">
                                 <picture  class="why-us-arrow">
                                     <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6625 6.58736C12.8903 6.81516 12.8903 7.18451 12.6625 7.41232L9.16246 10.9123C8.93465 11.1401 8.56531 11.1401 8.3375 10.9123C8.10969 10.6845 8.10969 10.3152 8.3375 10.0874L10.8417 7.58317L1.74998 7.58317C1.42781 7.58317 1.16664 7.322 1.16664 6.99984C1.16664 6.67767 1.42781 6.4165 1.74998 6.4165L10.8417 6.4165L8.3375 3.91232C8.10969 3.68451 8.10969 3.31516 8.3375 3.08736C8.56531 2.85955 8.93465 2.85955 9.16246 3.08736L12.6625 6.58736Z" fill="#1074D8"/>
@@ -200,7 +224,7 @@
                                 </picture>
                                 <p class="p-why-us">Приятные сотрудники</p>
                             </a>
-                            <a href="https://www.google.com/" class="why-us-card">
+                            <a href="https://www.google.com/" class="why-us-card" data-aos="zoom-in">
                                 <picture  class="why-us-arrow">
                                     <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6625 6.58736C12.8903 6.81516 12.8903 7.18451 12.6625 7.41232L9.16246 10.9123C8.93465 11.1401 8.56531 11.1401 8.3375 10.9123C8.10969 10.6845 8.10969 10.3152 8.3375 10.0874L10.8417 7.58317L1.74998 7.58317C1.42781 7.58317 1.16664 7.322 1.16664 6.99984C1.16664 6.67767 1.42781 6.4165 1.74998 6.4165L10.8417 6.4165L8.3375 3.91232C8.10969 3.68451 8.10969 3.31516 8.3375 3.08736C8.56531 2.85955 8.93465 2.85955 9.16246 3.08736L12.6625 6.58736Z" fill="#1074D8"/>
@@ -213,8 +237,8 @@
 
                     <div class="why-us-right">
                         <picture  class="why-us-img">
-                            <source srcset="assets/img/why-us-img.webp" type="image/webp">
-                            <img src="assets/img/why-us-img.png" alt="why-us-img">
+                            <source srcset="assets/img/why-us-img.webp" type="image/webp" data-aos="fade-right">
+                            <img src="assets/img/why-us-img.png" alt="why-us-img" data-aos="fade-right">
                         </picture>
                     </div>
                 </div>
@@ -222,15 +246,18 @@
         </section>
 
         <section class="section-achievements">
-<!--            TODO BG IMAGE-->
+            <picture  class="achievements-bg-img">
+                <source srcset="assets/img/achievements-bg-img.webp" type="image/webp">
+                <img src="assets/img/achievements-bg-img.png" alt="achievements-bg-img">
+            </picture>
             <div class="container">
                 <div class="achievements-wrapper">
-                    <div class="achievements-top">
-                        <h2><span>Более 6 лет опыта в сфере IT</span></h2>
+                    <div class="achievements-top" data-aos="zoom-in">
+                        <h2><span class=h2-big>Более 6 лет опыта в сфере IT</span></h2>
                         <p><span>Вы читаете это из-за того, что дизайнер расположил текст сюда</span></p>
                     </div>
                     <div class="achievements-bottom">
-                        <div class="achievements-card">
+                        <div class="achievements-card" data-aos="zoom-in">
                             <picture  class="achievements-img">
                                 <source srcset="assets/achievements-icon/clock.webp" type="image/webp">
                                 <img src="assets/achievements-icon/clock.png" alt="clock">
@@ -240,7 +267,7 @@
                                 <p class="p-weight-medium">Лет в разработке</p>
                             </article>
                         </div>
-                        <div class="achievements-card">
+                        <div class="achievements-card" data-aos="zoom-in">
                             <picture  class="achievements-img">
                                 <source srcset="assets/achievements-icon/bag.webp" type="image/webp">
                                 <img src="assets/achievements-icon/bag.png" alt="bag">
@@ -250,7 +277,7 @@
                                 <p class="p-weight-medium">Выполненных проектов</p>
                             </article>
                         </div>
-                        <div class="achievements-card">
+                        <div class="achievements-card" data-aos="zoom-in">
                             <picture  class="achievements-img">
                                 <source srcset="assets/achievements-icon/smile.webp" type="image/webp">
                                 <img src="assets/achievements-icon/smile.png" alt="smile">
@@ -260,7 +287,7 @@
                                 <p class="p-weight-medium">Довольных клиентов</p>
                             </article>
                         </div>
-                        <div class="achievements-card">
+                        <div class="achievements-card" data-aos="zoom-in">
                             <picture  class="achievements-img">
                                 <source srcset="assets/achievements-icon/group.webp" type="image/webp">
                                 <img src="assets/achievements-icon/group.png" alt="group">
@@ -278,16 +305,109 @@
         <section class="section-career">
             <div class="container">
                 <div class="career-wrapper">
-<!--                    TODO-->
+                    <div class="career-top" data-aos="zoom-in">
+                        <h6>Карьера в IT</h6>
+                        <h2><span class="h2-big" style="color: #000;">Вступайте в нашу команду</span></h2>
+                    </div>
+
+                    <div class="career-bottom">
+                        <a href="#" class="career-card" data-aos="zoom-in">
+                            <p class="p-career">Веб разработчик</p>
+                        </a>
+
+                        <a href="#" class="career-card" data-aos="zoom-in" >
+                            <p class="p-career">SEO специалист</p>
+                        </a>
+
+                        <a href="#" class="career-card" data-aos="zoom-in">
+                            <p class="p-career">Интернет маркетолог</p>
+                        </a>
+
+                        <a href="#" class="career-card" data-aos="zoom-in">
+                            <p class="p-career">SEO копирайтер</p>
+                        </a>
+
+                        <a href="#" class="career-card" data-aos="zoom-in">
+                            <p class="p-career">Графический дизайнер</p>
+                        </a>
+
+                        <a href="#" class="career-card" data-aos="zoom-in">
+                            <p class="p-career">UX/UI дизайнер</p>
+                        </a>
+
+                        <a href="#" class="career-card" data-aos="zoom-in">
+                            <p class="p-career">Менеджер компании</p>
+                        </a>
+
+                        <a href="#" class="career-card" data-aos="zoom-in">
+                            <p class="p-career">Тестировщик решений</p>
+                        </a>
+
+                        <a href="#" class="career-card" data-aos="zoom-in">
+                            <p class="p-career">Другая деятельность</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-<!--        TODO-->
+        <picture  class="footer-bg-img">
+            <source srcset="assets/img/footer-bg-img.webp" type="image/webp">
+            <img src="assets/img/footer-bg-img.png" alt="footer-bg-img">
+        </picture>
+
+        <section class="section-footer">
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="footer-left">
+                        <picture  class="footer-img">
+                            <source srcset="assets/img/footer-img.webp" type="image/webp" data-aos="flip-left">
+                            <img src="assets/img/footer-img.png" alt="footer-img" data-aos="flip-left">
+                        </picture>
+                    </div>
+
+                    <div class="footer-right" data-aos="zoom-in">
+                        <article>
+                            <h6>Карьера в IT</h6>
+                            <h2>Оставьте заявку на обратную связь</h2>
+                        </article>
+
+                        <form id="myForm">
+                            <div class="form-wrapper">
+                                <label for="nameInput"></label>
+                                <input class="input-name" type="text" id="nameInput" placeholder="Ваше имя*">
+                                <div class="tel-wrapper">
+                                    <span>+38</span>
+                                    <label for='yourPhone'></label>
+                                    <input class="tel" type='text' id='yourPhone' placeholder="00-00-0000*" />
+                                </div>
+                                <button id="form-button" class="submit-button">Отправить</button>
+
+                                <div class="capcha">
+
+                                </div>
+                            </div>
+
+<!--                            <div id="successMessage" style="display: none;" class="success-message">-->
+<!--                                <img src="/assets/img/quality.png" />-->
+<!--                                <h2>Дякуємо за заявку!</h2>-->
+<!--                                <p>Ваші дані успішно надіслані!</p>-->
+<!--                            </div>-->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="copyright">
+            <p>Copyright 2019-2022 © Skyweb Co. Все права защищены.</p>
+        </div>
     </footer>
 
-<div style="width: 100vw;height: 100vh;"></div>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

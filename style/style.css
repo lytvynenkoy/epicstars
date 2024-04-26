@@ -10,6 +10,21 @@
     color: #333;
 }
 
+main {
+    overflow: hidden;
+}
+
+h1 {
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 3.3vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    width: 61vw;
+}
+
 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 2vw;
@@ -42,6 +57,80 @@ h6 {
     margin: 0 auto;
 }
 
+/*HERO SECTION START*/
+h1 span {
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 3.3vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-decoration: underline;
+}
+
+.hero-bg-img * {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 52vw;
+    z-index: -1;
+}
+
+.hero-img * {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 48.6vw;
+    height: 45vw;
+    z-index: -1;
+}
+
+.section-hero {
+    position: relative;
+    padding-top: 8.3vw;
+    padding-bottom: 16.6vw;
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7vw;
+}
+
+.p-subtitle {
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 300 !important;
+    line-height: normal;
+    width: 50vw;
+}
+
+.button {
+    width: 12.1vw;
+    height: 3.2vw;
+
+    border-radius: 10px;
+    background: #789DD8;
+    box-shadow: 0 2px 10px 0 rgba(119, 157, 216, 0.50);
+
+    text-decoration: none;
+    border: none;
+
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: .8vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+/*HERO SECTION END*/
 /*SERVICE CARD START*/
 
 .service-wrapper {
@@ -108,9 +197,21 @@ h6 {
 
 .section-about-us, .section-why-us {
     margin-top: 16.6vw;
+    position: relative;
 }
 
 /*ABOUT US START*/
+
+.about-bg-img * {
+    width: 115vw;
+    height: 61vw;
+
+    position: absolute;
+    top: -13vw;
+    left: -2vw;
+
+    z-index: -1;
+}
 
 .about-us-wrapper {
     display: grid;
@@ -281,6 +382,18 @@ h6 {
 
 .section-achievements {
     margin-top: 21.1vw;
+    position: relative;
+}
+
+.achievements-bg-img * {
+    width: 105vw;
+    height: 41vw;
+
+    position: absolute;
+    top: -12vw;
+    left: -2vw;
+
+    z-index: -1;
 }
 
 .achievements-top {
@@ -290,7 +403,7 @@ h6 {
     gap: 1.3vw;
 }
 
-.achievements-top h2 span {
+.h2-big {
     color: #1074D8;
     font-family: 'Poppins', sans-serif;
     font-size: 2.5vw;
@@ -342,11 +455,232 @@ h6 {
 
 /*ACHIEVEMENTS END*/
 
+/*CAREER START*/
+
+.section-career {
+    margin-top: 14.2vw;
+}
+
+.career-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: .7vw;
+}
+
+.career-bottom {
+    margin-top: 2.7vw;
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 2.7vw;
+    justify-content: center;
+}
+
+.career-card {
+    width: 24.3vw;
+    height: 3.4vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+}
+
+.p-career {
+    color: #1074D8;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/*CAREER END*/
+
+/*FOOTER START*/
+
+footer {
+    position: relative;
+}
+
+.footer-bg-img * {
+    width: 100vw;
+    height: 45vw;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    z-index: -1;
+}
+
+.section-footer {
+    margin-top: 11.1vw;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.3vw;
+}
+
+.footer-img * {
+    width: 32.1vw;
+    height: 37.4vw;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 3.8vw;
+}
+
+.footer-right article {
+    display: flex;
+    flex-direction: column;
+    gap: .6vw;
+}
+.footer-right article * {color: #fff;}
+
+
+    /*Form*/
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.7vw;
+}
+
+.form-wrapper label {
+    display: none;
+}
+
+.input-name {
+    width: 18.7vw;
+    height: 3.1vw;
+
+    padding: .3vw .6vw .2vw .6vw;
+    border: 1px solid #DFE3ED;
+
+    transition: border-color 0.3s ease-in-out;
+
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 225%;
+}
+
+.input-name::placeholder {
+    color: #999;
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 225%;
+}
+
+.input-name:hover {
+    border-color: #859BA6;
+}
+
+.input-name:focus-visible {
+    outline: none;
+    border-color: #859BA6;
+}
+
+        /* INPUT MOBILE*/
+
+.tel-wrapper {
+    width: 18.7vw;
+    height: 3.1vw;
+
+    padding: .3vw .6vw .2vw .6vw;
+    border: 1px solid #DFE3ED;
+
+    background-color: #fff;
+    
+    transition: border-color 0.3s ease-in-out;
+}
+
+.tel-wrapper:hover {
+    border-color: #859BA6;
+}
+
+.tel-wrapper:focus-visible {
+    border-color: #859BA6;
+}
+
+.tel-wrapper span {
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 225%;
+}
+
+.tel {
+    text-decoration: none;
+    border: none;
+}
+
+.tel:focus-visible {
+    outline: none;
+}
+
+.tel::placeholder {
+    color: #999;
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 225%;
+}
+
+/*INPUT MOBILE END*/
+
+.submit-button {
+    width: 11.1vw;
+    height: 3.1vw;
+
+    color: #fff;
+    text-align: center;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+
+    border: none;
+    border-radius: .3vw;
+    background: #1074D8;
+}
+
+.input-name.invalid, .tel-wrapper.invalid {
+    background-color: rgba(255, 0, 0, 0.1);;
+    border-color: red;
+}
+
+input.error, .tel-wrapper.error{
+    border: 1px solid red;
+}
+
+.copyright {
+    text-align: center;
+}
+.copyright p {color: #ffffff}
+/*FOOTER END*/
+
 
 @media only screen and (max-width: 768px) {
 
     * {
         font-size: 2vw;
+    }
+
+    h1 {
+        font-size: 6.2vw;
+        width: 100%;
     }
 
     h2 {
@@ -364,6 +698,53 @@ h6 {
     .container {
         max-width: 94vw;
     }
+
+    /*HERO SECTION START*/
+    h1 span {
+        font-size: 6.2vw;
+        width: 100%;
+    }
+
+    .hero-bg-img * {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 120vw;
+        z-index: -1;
+    }
+
+    .hero-img * {
+        display: none;
+    }
+
+    .section-hero {
+        padding-top: 15.6vw;
+        padding-bottom: 30vw;
+    }
+
+    .hero-wrapper {
+        gap: 3.2vw;
+    }
+
+    .p-subtitle {
+        font-size: 4.6vw;
+        width: 60%;
+    }
+
+    .button {
+        width: 22.9vw;
+        height: 6.5vw;
+
+        border-radius: 1.3vw;
+
+        font-size: 1.8vw;
+
+    }
+
+    /*HERO SECTION END*/
+
 
     /*SERVICE CARD START*/
 
@@ -405,6 +786,10 @@ h6 {
     }
 
     /*ABOUT US START*/
+
+    .about-bg-img * {
+        display: none;
+    }
 
     .about-us-wrapper {
         grid-template-columns: repeat(1, auto);
@@ -520,6 +905,10 @@ h6 {
 
     /*ACHIEVEMENTS START*/
 
+    .achievements-bg-img * {
+      display: none;
+    }
+
     .section-achievements {
         margin-top: 39.7vw;
     }
@@ -528,7 +917,7 @@ h6 {
         gap: 2.6vw;
     }
 
-    .achievements-top h2 span {
+    .h2-big {
         font-size: 4.6vw;
     }
 
@@ -562,6 +951,107 @@ h6 {
 
     /*ACHIEVEMENTS END*/
 
+    /*CAREER START*/
+
+    .section-career {
+        margin-top: 26.6vw;
+    }
+
+    .career-top {
+        gap: 1.3vw;
+    }
+
+    .career-bottom {
+        margin-top: 5.2vw;
+
+        grid-template-columns: repeat(2, auto);
+        gap: 5.2vw;
+    }
+
+    .career-card {
+        width: 35.5vw;
+        height: 6.5vw;
+    }
+
+    /*CAREER END*/
+
+    /*FOOTER START*/
+    .footer-bg-img * {
+        width: 100vw;
+        height: 55vw;
+    }
+
+    .section-footer {
+        margin-top: 15vw;
+    }
+
+    .footer-wrapper {
+        gap: 1.3vw;
+    }
+
+    .footer-img * {
+        display: none;
+    }
+
+    .footer-right {
+        grid-row: 1;
+        gap: 5.2vw;
+    }
+
+    .footer-right article {
+        gap: 1.3vw;
+    }
+
+    /*Form*/
+
+    .form-wrapper {
+        gap: 3.2vw;
+    }
+
+    .input-name {
+        width: 35vw;
+        height: 5.8vw;
+
+        padding: .6vw 1.3vw .5vw 1.3vw;
+
+        font-size: 2vw;
+    }
+
+    .input-name::placeholder {
+        font-size: 2vw;
+    }
+
+    /* INPUT MOBILE*/
+
+    .tel-wrapper {
+        width: 35vw;
+        height: 5.8vw;
+
+        padding: .6vw 1.3vw .5vw 1.3vw;
+    }
+
+    .tel-wrapper span {
+        font-size: 2vw;
+    }
+
+
+    .tel::placeholder {
+        font-size: 2vw;
+    }
+
+    /*INPUT MOBILE END*/
+
+    .submit-button {
+        width: 20.8vw;
+        height: 5.8vw;
+
+        font-size: 1.9vw;
+        border-radius: .6vw;
+
+    }
+
+    /*FOOTER END*/
+
 }
 
 
@@ -569,6 +1059,10 @@ h6 {
 
     * {
         font-size: 3.8vw;
+    }
+
+    h1 {
+        font-size: 9vw;
     }
 
     h2 {
@@ -588,6 +1082,41 @@ h6 {
         padding: 0 2.3vw;
         margin: 0;
     }
+
+    /*HERO SECTION START*/
+    h1 span {
+        font-size: 9vw;
+    }
+
+    .hero-bg-img * {
+        height: 170vw;
+    }
+
+    .section-hero {
+        padding-top: 28vw;
+        padding-bottom: 57vw;
+    }
+
+    .hero-wrapper {
+        gap: 6vw;
+    }
+
+    .p-subtitle {
+        font-size: 5vw;
+        width: 100%;
+    }
+
+    .button {
+        width: 41.6vw;
+        height: 11.9vw;
+
+        border-radius: 2.3vw;
+
+        font-size: 3.3vw;
+
+    }
+
+    /*HERO SECTION END*/
 
     /*SERVICE CARD START*/
 
@@ -719,7 +1248,7 @@ h6 {
         text-align: center;
     }
 
-    .achievements-top h2 span {
+    .h2-big {
         font-size: 8.5vw;
     }
 
@@ -750,5 +1279,100 @@ h6 {
     }
 
     /*ACHIEVEMENTS END*/
+
+    /*CAREER START*/
+
+    .section-career {
+        margin-top: 35vw;
+    }
+
+    .career-top {
+        gap: 2.3vw;
+        text-align: center;
+    }
+
+    .career-bottom {
+        margin-top: 9.5vw;
+
+        grid-template-columns: repeat(1, auto);
+        gap: 9.5vw;
+    }
+
+    .career-card {
+        width: 75vw;
+        height: 12vw;
+    }
+
+    /*CAREER END*/
+
+    /*FOOTER START*/
+
+    .section-footer {
+        margin-top: 30vw;
+    }
+
+    .footer-wrapper {
+        grid-template-columns: 1fr;
+        gap: 4.7vw;
+    }
+
+    .footer-right {
+        grid-row: 1;
+        gap: 13vw;
+    }
+
+    .footer-right article {
+        gap: 2.3vw;
+    }
+
+    /*Form*/
+
+    .form-wrapper {
+        gap: 6vw;
+    }
+
+    .input-name {
+        width: 65vw;
+        height: 10.7vw;
+
+        padding: 1.1vw 2.3vw .9vw 2.3vw;
+
+        font-size: 3.8vw;
+    }
+
+    .input-name::placeholder {
+        font-size: 3.8vw;
+    }
+
+    /* INPUT MOBILE*/
+
+    .tel-wrapper {
+        width: 65vw;
+        height: 10.7vw;
+
+        padding: 1.1vw 2.3vw .9vw 2.3vw;
+    }
+
+    .tel-wrapper span {
+        font-size: 3.8vw;
+    }
+
+
+    .tel::placeholder {
+        font-size: 3.8vw;
+    }
+
+    /*INPUT MOBILE END*/
+
+    .submit-button {
+        width: 38vw;
+        height: 10.7vw;
+
+        font-size: 3.5vw;
+        border-radius: 1.1vw;
+
+    }
+
+    /*FOOTER END*/
 
 }
