@@ -128,6 +128,13 @@ h1 span {
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
+
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background: rgba(120, 157, 216, 0.6); /* Зменшення непрозорості фону */
+    box-shadow: 0 5px 15px 0 rgba(119, 157, 216, 0.50); /* Збільшення тіні */
 }
 
 /*HERO SECTION END*/
@@ -654,6 +661,12 @@ footer {
     border: none;
     border-radius: .3vw;
     background: #1074D8;
+
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background: rgba(16, 116, 216, 0.6);
 }
 
 .input-name.invalid, .tel-wrapper.invalid {
